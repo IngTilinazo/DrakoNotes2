@@ -4,6 +4,7 @@
   "description": "App de notas profesional",
   "main": "www/index.html",
   "scripts": {
+    "ionic:build:before": "npx cap add android",
     "prebuild": "npx cap add android",
     "build": "npx cap sync android && echo 'Build completed'",
     "start": "npx cap run android",
